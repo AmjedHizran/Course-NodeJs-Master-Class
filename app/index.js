@@ -103,6 +103,12 @@ handlers.notFound = function(data,callback){
     callback(404);
 };
 
+// Home work handler
+handlers.homeWork = function(data,callback){
+    callback(200,{'message' : 'welocome to my website'});
+};
+
 var router = {
-    'ping' : handlers.ping
+    'ping' : handlers.ping,
+    'helo' : handlers.homeWork
 };
